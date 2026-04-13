@@ -5,7 +5,7 @@ import { Alert, Field, PasswordStrength } from '../components/UI';
 import api from '../api/axios';
 
 export default function Profile() {
-  const { user, updateUser } = useAuth();
+  const { user } = useAuth();
   const [activeTab, setActiveTab] = useState('info');
   const [saved, setSaved]         = useState(false);
   const [saving, setSaving]       = useState(false);
